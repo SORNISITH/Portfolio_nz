@@ -1,35 +1,101 @@
-# nz_portfolio
+# CADT frontend project
 
-This template should help get you started developing with Vue 3 in Vite.
+# 🌐 Personal Portfolio Website
 
-## Recommended IDE Setup
+This is a modern **Vue 3** portfolio website built with **Tailwind CSS**, **Vue Router**, and **Vite**. It showcases your personal projects, skills, and contact information with a responsive, clean design.
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+---
 
-## Customize configuration
+## 🚀 Features
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+- 🔥 Built with [Vue 3](https://vuejs.org/) and [Vite](https://vitejs.dev/)
+- 💅 Styled with [Tailwind CSS 4](https://tailwindcss.com/)
+- 🧭 Routing powered by [Vue Router 4](https://router.vuejs.org/)
+- 🧼 Code formatting with ESLint + Prettier
+- 🛠️ Developer experience enhanced with Vue Devtools and Hot Module Replacement (HMR)
 
-## Project Setup
+---
 
-```sh
+## 📁 Project Structure
+
+```
+src/
+├── assets/           # Static assets
+├── components/       # Vue components
+├── views/            # Page views (Home, About, Projects, Contact)
+├── router/           # Vue Router configuration
+├── App.vue           # Main app component
+└── main.js           # Entry point
+```
+
+---
+
+## 🧰 Tech Stack
+
+### Runtime Dependencies
+
+- `vue@^3.5.13`
+- `vue-router@^4.5.0`
+- `tailwindcss@^4.1.11`
+- `@tailwindcss/vite@^4.1.11`
+
+### Development Dependencies
+
+- `vite@^6.2.4`
+- `@vitejs/plugin-vue@^5.2.3`
+- `vite-plugin-vue-devtools@^7.7.2`
+- `eslint@^9.22.0`
+- `@eslint/js@^9.22.0`
+- `eslint-plugin-vue@~10.0.0`
+- `@vue/eslint-config-prettier@^10.2.0`
+- `prettier@3.5.3`
+- `globals@^16.0.0`
+
+---
+
+## 🛠️ Setup Instructions
+
+### 1. Clone the project
+
+```bash
+git clone https://github.com/your-username/your-portfolio.git
+cd your-portfolio
+```
+
+### 2. Install dependencies
+
+```bash
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+### 3. Run development server
 
-```sh
+```bash
 npm run dev
 ```
 
-### Compile and Minify for Production
+Visit: [http://localhost:5173](http://localhost:5173)
 
-```sh
-npm run build
-```
+---
 
-### Lint with [ESLint](https://eslint.org/)
+## ⚙️ Scripts
 
-```sh
-npm run lint
-```
+| Command          | Description               |
+| ---------------- | ------------------------- |
+| `npm run dev`    | Start dev server with HMR |
+| `npm run build`  | Build for production      |
+| `npm run lint`   | Run ESLint                |
+| `npm run format` | Format code with Prettier |
+
+---
+
+## 📝 License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
+## 🙋‍♂️ Author
+
+Made with ❤️ by **SOR NISITH**  
+📫 Reach me at: [nisith100394@gmail.com](mailto:your-email@example.com)
