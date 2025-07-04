@@ -1,5 +1,7 @@
-<script setup></script>
+<script setup>
+import { Button } from '@/components/ui/button'
+</script>
 
 <template>
-  <main></main>
+  <main><Button variant="outline">Button</Button></main>
 </template>
