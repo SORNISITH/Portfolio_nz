@@ -6,7 +6,7 @@ const LANG = (type) => ({
   about_me: type === 'en' ? 'About Us' : 'អំពី​ពួក​យើង',
   services: type === 'en' ? 'Services' : 'សេវាកម្ម',
   projects: type === 'en' ? 'Projects' : 'គម្រោង',
-  github: type === 'en' ? 'Github' : 'ហ្គីតហប់',
+  github: type === 'en' ? 'Github' : 'ហ្គីតហប់ - Github',
   contact: type === 'en' ? 'Contact' : 'ទំនាក់ទំនង',
   blog: type === 'en' ? 'Blog' : 'ប្លុក',
   faq: type === 'en' ? 'FAQ' : 'សំណួរញឹកញាប់',
@@ -34,14 +34,6 @@ const LANG = (type) => ({
   noAccount: type === 'en' ? "Don't have an account?" : 'មិនទាន់មានគណនី?',
   haveAccount: type === 'en' ? 'Already have an account?' : 'មានគណនីរួចហើយ?',
 
-  // Footer
-  privacy: type === 'en' ? 'Privacy Policy' : 'គោលការណ៍ភាពឯកជន',
-  terms: type === 'en' ? 'Terms of Service' : 'លក្ខខណ្ឌសេវាកម្ម',
-  copyright:
-    type === 'en'
-      ? '© 2025 Your Company. All rights reserved.'
-      : '© ២០២៥ ក្រុមហ៊ុនរបស់អ្នក។ រក្សាសិទ្ធិគ្រប់យ៉ាង។',
-
   // Messages
   success: type === 'en' ? 'Operation successful' : 'ប្រតិបត្តិការជោគជ័យ',
   error: type === 'en' ? 'Something went wrong' : 'មានបញ្ហាមួយ',
@@ -61,11 +53,31 @@ const LANG = (type) => ({
   yes: type === 'en' ? 'Yes' : 'បាទ / ចាស',
   no: type === 'en' ? 'No' : 'ទេ',
   //footer
+  contact_us: type === 'en' ? 'Contact Us' : 'ទំនាក់ទំនងយើង',
+
   perspective: type === 'en' ? 'Perspective Field' : 'ទស្សនៈវិស័យ ',
   perspective_desc:
     type === 'en'
       ? 'We are a leading web services provider, committed to delivering cutting-edge solutions that empower your business online. Our expert team focuses on innovation, reliability, and customer satisfaction.'
       : 'យើងគឺជាអ្នកផ្តល់សេវាវេបសាយដ៏ឈានមុខគេ ដោយប្តេជ្ញាចិត្តផ្តល់នូវដំណោះស្រាយឈានមុខបច្ចេកវិទ្យា ដែលជួយឲ្យអាជីវកម្មរបស់អ្នករីកចម្រើនលើអ៊ីនធឺណិត។ ក្រុមអ្នកជំនាញរបស់យើងផ្តោតលើការច្នៃប្រឌិត ភាពទំនុកចិត្ត និងការពេញចិត្តរបស់អតិថិជន។ ',
+  // Footer
+  privacy: type === 'en' ? 'Privacy Policy' : 'គោលការណ៍ភាពឯកជន',
+  terms: type === 'en' ? 'Terms of Service' : 'លក្ខខណ្ឌសេវាកម្ម',
+  footer_email:
+    type === 'en' ? 'Email : nisith100394@gmail.com' : 'អ៊ីមែល : nisith100394@gmail.com',
+
+  footer_phone: type === 'en' ? 'Phone : +855 69907747' : 'ទូរស័ព្ទ : +855 69907747',
+  footer_our_services: type === 'en' ? 'Our Services' : 'សេវាកម្ម​របស់​យើង',
+  footer_web_design: type === 'en' ? 'Web Design' : 'រចនាប័ទ្ម​វេបសាយ',
+  footer_app_development: type === 'en' ? 'App Development' : 'ការអភិវឌ្ឍកម្មវិធី',
+  footer_seo_optimization: type === 'en' ? 'SEO Optimization' : 'បង្កើនប្រសិទ្ធភាព SEO',
+  footer_cloud_hosting: type === 'en' ? 'Cloud Hosting' : 'ម៉ាស៊ីនបម្រើពពក',
+
+  footer_address: type === 'en' ? 'Address : Phnom Penh, Cambodia' : 'អាសយដ្ឋាន : ភ្នំពេញ, កម្ពុជា',
+  copyright:
+    type === 'en'
+      ? '© 2025  SOR NISITH. All rights reserved.'
+      : '© ២០២៥ ក្រុមហ៊ុនរបស់អ្នក។ រក្សាសិទ្ធិគ្រប់យ៉ាង។',
 
   // Misc
   language: type === 'en' ? 'Language' : 'ភាសា',
