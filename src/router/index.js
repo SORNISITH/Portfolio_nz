@@ -1,8 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import DefaultLayout from '@/DefaultLayout.vue'
 const router = createRouter({
-  linkActiveClass: 'after:w-full font-bold text-blue-800',
-  linkExactActiveClass: 'border-indigo-700',
+  linkActiveClass: '',
+  linkExactActiveClass: 'after:w-full font-bold text-blue-800 border-indigo-700',
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
@@ -11,7 +11,7 @@ const router = createRouter({
       component: DefaultLayout,
       children: [
         {
-          path: '/',
+          path: '',
           name: 'home',
           component: () => import('../views/HomeView.vue'),
         },

@@ -26,7 +26,7 @@ const navBarSlide = ref(false)
             <li class="flex justify-center items-center h-full" v-for="item in menu" :key="item">
               <router-link
                 class="relative after:content-[''] after:absolute after:left-0 after:-bottom-[10px] after:h-[2px] after:w-0 after:bg-blue-500 after:transition-all after:duration-300 hover:after:w-full active-link"
-                :to="item.toLowerCase().replace(/\s+/g, '_')"
+                :to="item == 'Home' ? '/' : item.toLowerCase().replace(/\s+/g, '_')"
               >
                 {{ item }}
               </router-link>
