@@ -25,6 +25,16 @@ const router = createRouter({
           name: 'github',
           component: () => import('../views/GithubView.vue'),
         },
+        {
+          path: '/contact',
+          name: 'contact',
+          component: () => import('../views/ContactUsView.vue'),
+        },
+        {
+          path: '/projects',
+          name: 'projects',
+          component: () => import('../views/ProjectView.vue'),
+        },
       ],
     },
     {
