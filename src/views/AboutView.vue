@@ -1,5 +1,7 @@
+<script setup>
+import MyBackGround from '@/components/MyBackGround.vue'
+import { ref } from 'vue'
+</script>
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+  <MyBackGround />
 </template>

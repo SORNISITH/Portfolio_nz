@@ -10,7 +10,10 @@ const LANG = (type) => ({
   contact: type === 'en' ? 'Contact' : 'ទំនាក់ទំនង',
   blog: type === 'en' ? 'Blog' : 'ប្លុក',
   faq: type === 'en' ? 'FAQ' : 'សំណួរញឹកញាប់',
-
+  welcome_hero:
+    type === 'en'
+      ? "From sleek business pages to dynamic web apps, we design experiences that captivate and convert. Let's build your digital future — pixel by pixel."
+      : 'ពីគេហទំព័រអាជីវកម្មរ ដល់កម្មវិធីវេបអន្តរកម្ម យើងរចនាបទពិសោធន៍ដែលទាក់ទាញ  និងបង្កើតអនាគតឌីជីថលរបស់អ្នក ជាមួយគ្នា ជាដំណាក់កាលជាមួយពិកសែល។',
   // Buttons
   login: type === 'en' ? 'Login' : 'ចូលគណនី',
   register: type === 'en' ? 'Register' : 'ចុះឈ្មោះ',

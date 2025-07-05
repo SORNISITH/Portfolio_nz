@@ -83,35 +83,17 @@ const toolColors = {
   Cypress: 'bg-green-100 text-green-900',
   Playwright: 'bg-indigo-100 text-indigo-900',
   Vitest: 'bg-lime-200 text-lime-900',
-
-  Android: 'bg-green-100 text-green-800',
-  iOS: 'bg-gray-200 text-gray-900',
-  Flutter: 'bg-blue-200 text-blue-900',
-  'React Native': 'bg-cyan-100 text-cyan-800',
-  Swift: 'bg-red-300 text-red-900',
-  Kotlin: 'bg-orange-200 text-orange-900',
-
-  // Desktop
-  Electron: 'bg-purple-200 text-purple-900',
-  Qt: 'bg-blue-300 text-blue-900',
-  WPF: 'bg-indigo-200 text-indigo-900',
-  '.NET': 'bg-sky-200 text-sky-900',
-  GTK: 'bg-emerald-200 text-emerald-900',
-
-  // WebAssembly
-  Rust: 'bg-orange-300 text-orange-900',
-  AssemblyScript: 'bg-yellow-200 text-yellow-900',
-  Emscripten: 'bg-gray-300 text-gray-900',
-  Blazor: 'bg-blue-400 text-blue-900',
 }
 </script>
 <template>
   <!-- Grid container -->
   <div>
-    <div class="border-b border-gray-300 mb-4">
+    <div>
       <h1 class="text-center text-2xl py-2">Web Development Services</h1>
     </div>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6 bg-gray-100 items-stretch">
+    <div
+      class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-6 bg-gray-100 items-stretch"
+    >
       <!-- Card -->
       <div
         v-for="(service, index) in services"
