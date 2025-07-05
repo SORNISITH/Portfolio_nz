@@ -3,7 +3,7 @@ import { createI18n } from 'vue-i18n'
 const LANG = (type) => ({
   // Navbar
   home: type === 'en' ? 'Home' : 'ទំព័រដើម',
-  about_me: type === 'en' ? 'About Us' : 'អំពី​ពួក​យើង',
+  about_me: type === 'en' ? 'About Me' : 'អំពី​ពួក​ខ្ញុំ',
   services: type === 'en' ? 'Services' : 'សេវាកម្ម',
   projects: type === 'en' ? 'Projects' : 'គម្រោង',
   github: type === 'en' ? 'Github' : 'ហ្គីតហប់ - Github',
@@ -64,7 +64,7 @@ const LANG = (type) => ({
   privacy: type === 'en' ? 'Privacy Policy' : 'គោលការណ៍ភាពឯកជន',
   terms: type === 'en' ? 'Terms of Service' : 'លក្ខខណ្ឌសេវាកម្ម',
   footer_email:
-    type === 'en' ? 'Email : nisith100394@gmail.com' : 'អ៊ីមែល : nisith100394@gmail.com',
+    type === 'en' ? 'Email : nisith100394@@gmail.com' : 'អ៊ីមែល : nisith10039@4@gmail.com',
 
   footer_phone: type === 'en' ? 'Phone : +855 69907747' : 'ទូរស័ព្ទ : +855 69907747',
   footer_our_services: type === 'en' ? 'Our Services' : 'សេវាកម្ម​របស់​យើង',

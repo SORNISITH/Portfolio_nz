@@ -19,16 +19,20 @@ const { t } = useI18n()
           <h2 class="text-white text-xl font-semibold mb-4">{{ t('footer_our_services') }}</h2>
           <ul class="space-y-2 text-gray-400">
             <li>
-              <a href="#" class="hover:text-white transition">{{ t('footer_web_design') }}</a>
+              <address class="hover:text-white transition">{{ t('footer_web_design') }}</address>
             </li>
             <li>
-              <a href="#" class="hover:text-white transition">{{ t('footer_app_development') }}</a>
+              <address class="hover:text-white transition">
+                {{ t('footer_app_development') }}
+              </address>
             </li>
             <li>
-              <a href="#" class="hover:text-white transition">{{ t('footer_seo_optimization') }}</a>
+              <address href="/" class="hover:text-white transition">
+                {{ t('footer_seo_optimization') }}
+              </address>
             </li>
             <li>
-              <a href="#" class="hover:text-white transition">{{ t('footer_cloud_hosting') }}</a>
+              <address class="hover:text-white transition">{{ t('footer_cloud_hosting') }}</address>
             </li>
           </ul>
         </div>
@@ -36,7 +40,7 @@ const { t } = useI18n()
         <!-- Contact -->
         <div class="md:w-1/3">
           <h2 class="text-white text-xl font-semibold mb-4">{{ t('contact_us') }}</h2>
-          <p class="text-gray-400 mb-2">{{ t('footer_email') }}</p>
+          <p class="text-gray-400 mb-2">{{ $t('footer_email').replace('@@', '@') }}</p>
           <p class="text-gray-400 mb-2">{{ t('footer_phone') }}</p>
           <p class="text-gray-400">{{ t('footer_address') }}</p>
         </div>

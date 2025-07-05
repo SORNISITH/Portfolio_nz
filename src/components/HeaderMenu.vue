@@ -14,7 +14,9 @@ const changeLanguage = (language) => {
 </script>
 
 <template>
-  <header class="bg-gray-100 h-16 flex justify-evenly top-0 sticky z-10 w-full shadow-sm">
+  <header
+    class="bg-gray-100 h-16 flex justify-evenly top-0 backdrop-blur-lg sticky z-10 w-full shadow-sm"
+  >
     <div
       class="mx-auto flex w-[100%] lg:w-[60%] h-full justify-center items-center gap-8 px-4 sm:px-6 lg:px-8"
     >
@@ -41,15 +43,15 @@ const changeLanguage = (language) => {
           <span class="flex h-6 items-center text-sm"> <Separator orientation="vertical" /></span>
           <div class="flex items-center gap-2 hover:scale-120 cursor-pointer">
             <span
-              @click="changeLanguage('en')"
-              :class="{ hidden: lang == 'en' }"
+              @click="changeLanguage('khm')"
+              :class="{ hidden: lang == 'khm' }"
               class="aspect-square w-5"
               ><p class="sr-only">English Language</p>
               <img src="/en.png" alt="english"
             /></span>
             <span
-              @click="changeLanguage('khm')"
-              :class="{ hidden: lang == 'khm' }"
+              @click="changeLanguage('en')"
+              :class="{ hidden: lang == 'en' }"
               class="aspect-square w-5"
               ><p class="sr-only">Cambodian Language</p>
               <img src="/kh.png" alt="english"
