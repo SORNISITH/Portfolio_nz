@@ -1,10 +1,16 @@
 <script setup>
 import { ref } from 'vue'
 import { Button } from '@/components/ui/button'
+import { useI18n } from 'vue-i18n'
 import { Separator } from '@/components/ui/separator'
 const menu = ref(['Home', 'About Me', 'Projects', 'Github', 'Contact'])
-const lang = ref('en')
 const navBarSlide = ref(false)
+const lang = ref('en')
+const { t, locale } = useI18n()
+const changeLanguage = (language) => {
+  locale.value = language
+  lang.value = language
+}
 </script>
 
 <template>
@@ -28,17 +34,23 @@ const navBarSlide = ref(false)
                 class="relative after:content-[''] after:absolute after:left-0 after:-bottom-[10px] after:h-[2px] after:w-0 after:bg-blue-500 after:transition-all after:duration-300 hover:after:w-full active-link"
                 :to="item == 'Home' ? '/' : item.toLowerCase().replace(/\s+/g, '_')"
               >
-                {{ item }}
+                {{ t(item.toLowerCase().replace(/\s+/g, '_')) }}
               </router-link>
             </li>
           </ul>
           <span class="flex h-6 items-center text-sm"> <Separator orientation="vertical" /></span>
           <div class="flex items-center gap-2 hover:scale-120 cursor-pointer">
-            <span @click="lang = 'en'" :class="{ hidden: lang == 'en' }" class="aspect-square w-5"
+            <span
+              @click="changeLanguage('en')"
+              :class="{ hidden: lang == 'en' }"
+              class="aspect-square w-5"
               ><p class="sr-only">English Language</p>
               <img src="/en.png" alt="english"
             /></span>
-            <span @click="lang = 'kh'" :class="{ hidden: lang == 'kh' }" class="aspect-square w-5"
+            <span
+              @click="changeLanguage('khm')"
+              :class="{ hidden: lang == 'khm' }"
+              class="aspect-square w-5"
               ><p class="sr-only">Cambodian Language</p>
               <img src="/kh.png" alt="english"
             /></span>
