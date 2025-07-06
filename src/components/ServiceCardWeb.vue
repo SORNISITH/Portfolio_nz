@@ -98,11 +98,11 @@ const toolColors = {
       <div
         v-for="(service, index) in services"
         :key="index"
-        class="flex flex-col border-l-[5px] border-green-500 bg-white p-6 text-black shadow-sm rounded-md"
+        class="flex hover:border-1 hover:border-green-500 hover:z-100 transition-all duration-300 flex-col border-l-[5px] border-green-500 bg-white p-6 text-black shadow-sm rounded-md"
       >
         <h1 class="text-2xl font-bold mb-3">{{ service.title }}</h1>
         <p class="mb-4 text-base text-gray-700">{{ service.description }}</p>
-        <h2 class="text-base font-semibold mb-2">Tools:</h2>
+        <br />
         <ul class="flex flex-wrap gap-3 text-sm font-medium mt-auto">
           <li
             v-for="tool in service.tools"

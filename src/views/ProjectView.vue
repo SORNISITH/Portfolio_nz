@@ -1,7 +1,8 @@
 <script setup>
-import MyBackGround from '@/components/MyBackGround.vue'
 import { ref } from 'vue'
+import ProjectCard from '@/components/ProjectCard.vue'
 </script>
 <template>
-  <MyBackGround />
+  <!-- Grid container -->
+  <ProjectCard />
 </template>

@@ -13,8 +13,7 @@ const LANG = (type) => ({
   welcome_hero:
     type === 'en'
       ? "From sleek business pages to dynamic web apps, we design experiences that captivate and convert. Let's build your digital future — pixel by pixel."
-      : 'ពីគេហទំព័រអាជីវកម្មរ ដល់កម្មវិធីវេបអន្តរកម្ម យើងរចនាបទពិសោធន៍ដែលទាក់ទាញ  និងបង្កើតអនាគតឌីជីថលរបស់អ្នក ជាមួយគ្នា ជាដំណាក់កាលជាមួយពិកសែល។',
-  // Buttons
+      : 'ឆ្នៃគេហទំព័រអាជីវកម្ម រហូតដល់កម្មវិធីវេបអេប Web App ។ យើងរចនាបទស្តង់ដា  និងបង្កើតវេបសាយអនាគតឌីជីថលរបស់អ្នក ជាមួយគ្នា ជាដំណាក់តូចដូច គ្រប់ ​Pixel', // Buttons,
   login: type === 'en' ? 'Login' : 'ចូលគណនី',
   register: type === 'en' ? 'Register' : 'ចុះឈ្មោះ',
   logout: type === 'en' ? 'Logout' : 'ចាកចេញ',
