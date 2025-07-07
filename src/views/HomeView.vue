@@ -18,7 +18,7 @@ const { t } = useI18n()
 
 .welcome-text {
   font-family: 'Fira Sans', sans-serif;
-  font-weight: 150;
+  font-weight: 220;
   font-style: normal;
 }
 </style>
@@ -29,7 +29,7 @@ const { t } = useI18n()
         <span class="flex flex-col items-end text-right">
           <h1 class="welcome text-2xl">Welcome to N Z</h1>
           <h1
-            class="w-[90%] sm:text-gray-900 lg:w-[50%] md:w-[60%] text-l lg:text-2xl md:text-xl welcome-text"
+            class="w-[90%] text-teal-700 lg:w-[50%] md:w-[60%] text-l lg:text-2xl md:text-xl welcome-text"
           >
             {{ t('welcome_hero') }}
           </h1>
