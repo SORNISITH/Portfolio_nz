@@ -6,7 +6,6 @@ import ServiceCardWeb from '@/components/ServiceCardWeb.vue'
 import { ref } from 'vue'
 import { useI18n } from 'vue-i18n'
 import ServiceCardArcgisPro from '@/components/ServiceCardArcgisPro.vue'
-import TrustPartner from '@/components/TrustPartner.vue'
 const { t } = useI18n()
 </script>
 <style scoped>
@@ -29,7 +28,9 @@ const { t } = useI18n()
       <div class="w-1/2 flex justify-end items-center">
         <span class="flex flex-col items-end text-right">
           <h1 class="welcome text-2xl">Welcome to N Z</h1>
-          <h1 class="w-[90%] lg:w-[50%] md:w-[60%] text-l lg:text-2xl md:text-xl welcome-text">
+          <h1
+            class="w-[90%] sm:text-gray-900 lg:w-[50%] md:w-[60%] text-l lg:text-2xl md:text-xl welcome-text"
+          >
             {{ t('welcome_hero') }}
           </h1>
         </span>
