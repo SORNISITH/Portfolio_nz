@@ -6,6 +6,7 @@ import ServiceCardWeb from '@/components/ServiceCardWeb.vue'
 import { ref } from 'vue'
 import { useI18n } from 'vue-i18n'
 import ServiceCardArcgisPro from '@/components/ServiceCardArcgisPro.vue'
+import TrustPartner from '@/components/TrustPartner.vue'
 const { t } = useI18n()
 </script>
 <style scoped>

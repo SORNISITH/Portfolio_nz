@@ -93,6 +93,18 @@ const toolColors = {
   Cypress: 'bg-green-100 text-green-900',
   Playwright: 'bg-indigo-100 text-indigo-900',
   Vitest: 'bg-lime-200 text-lime-900',
+  HTML5: 'bg-[hsl(231,90%,90%)] text-[hsl(231,60%,30%)]',
+  GSAP: 'bg-[hsl(292,90%,90%)] text-[hsl(292,60%,30%)]',
+  Express: 'bg-[hsl(810,90%,90%)] text-[hsl(810,60%,30%)]',
+  'Socket.IO': 'bg-[hsl(614,90%,90%)] text-[hsl(614,60%,30%)]',
+  'Next.js': 'bg-[hsl(588,90%,90%)] text-[hsl(588,60%,30%)]',
+  'Sanity.io': 'bg-[hsl(911,90%,90%)] text-[hsl(911,60%,30%)]',
+  'OpenWeather API': 'bg-[hsl(1522,90%,90%)] text-[hsl(1522,60%,30%)]',
+  Bootstrap: 'bg-[hsl(944,90%,90%)] text-[hsl(944,60%,30%)]',
+  'Redux Toolkit': 'bg-[hsl(1306,90%,90%)] text-[hsl(1306,60%,30%)]',
+  Firebase: 'bg-[hsl(741,90%,90%)] text-[hsl(741,60%,30%)]',
+  EJS: 'bg-[hsl(226,90%,90%)] text-[hsl(226,60%,30%)]',
+  'Chart.js': 'bg-[hsl(870,90%,90%)] text-[hsl(870,60%,30%)]',
 }
 </script>
 
@@ -110,7 +122,7 @@ const toolColors = {
       <div
         v-for="(service, index) in services"
         :key="index"
-        class="flex flex-col hover:border-1 hover:border-green-500 hover:z-100 transition-all duration-300 border-b-[5px] border-green-500 bg-white text-black shadow-sm rounded-md overflow-hidden"
+        class="flex flex-col hover:border-2 hover:border-green-500 hover:z-100 transition-all duration-300 border-b-[5px] border-green-500 bg-white text-black shadow-sm rounded-md overflow-hidden"
       >
         <!-- Title -->
         <h1 class="text-2xl text-center p-2 font-bold mb-3">
@@ -118,7 +130,7 @@ const toolColors = {
         </h1>
 
         <!-- Image Section -->
-        <div class="bg-gray-200 h-70 flex items-center justify-center">
+        <div class="bg-gray-200 h-120 flex items-center justify-center">
           <img
             :src="service.image"
             alt="Screenshot of project"

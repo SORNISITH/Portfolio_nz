@@ -16,6 +16,7 @@ const getRotationClass = (index) => {
   const rotations = ['rotate-0', 'rotate-90', 'rotate-90', 'rotate-0']
   return rotations[index % rotations.length]
 }
+
 onMounted(() => {
   intervalId = window.setInterval(() => {
     order.value = shuffle(order.value)
@@ -112,14 +113,14 @@ const item = {
 }
 </style>
 <template>
-  <ul :style="container">
+  <ul class="cursor-pointer" :style="container">
     <motion.li
-      class="p-1"
       v-for="(backgroundColor, index) in order"
       :key="backgroundColor"
       layout
       :transition="spring"
       :style="{ ...item }"
+      class="hover:scale-120 transition-scale p-1"
     >
       <svg
         v-if="index == 0 || index == 3"

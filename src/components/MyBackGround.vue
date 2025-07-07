@@ -16,36 +16,40 @@
       </div>
       <br />
 
-      <div class="space-y-4 flex justify-center items-center gap-2 lg:text-xl">
+      <div class="space-y-4 flex justify-center items-center gap-2 lg:text-xl flex-wrap">
         <a
           href="https://github.com/SORNISITH"
           target="_blank"
-          class="inline-block bg-teal-400 text-black px-4 py-2 rounded hover:bg-teal-300"
+          class="inline-block bg-[#24292f] text-white px-4 py-2 rounded hover:bg-[#1b1f23]"
         >
-          My GitHub
+          GitHub
         </a>
+
         <a
           href="https://web.facebook.com/nisith.sor.2025/"
           target="_blank"
-          class="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-500"
+          class="inline-block bg-[#1877F2] text-white px-4 py-2 rounded hover:bg-[#166FE5]"
         >
           Facebook
         </a>
+
         <a
           href="https://t.me/NZ_999999999999"
           target="_blank"
-          class="inline-block bg-blue-400 text-white px-4 py-2 rounded hover:bg-blue-300"
+          class="inline-block bg-[#0088cc] text-white px-4 py-2 rounded hover:bg-[#007dbb]"
         >
           Telegram
         </a>
+
         <a
           href="https://gravatar.com/nisith100394gmailcom"
           target="_blank"
-          class="inline-block bg-gray-700 text-white px-4 py-2 rounded hover:bg-gray-600"
+          class="inline-block bg-[#444] text-white px-4 py-2 rounded hover:bg-[#333]"
         >
           Gravatar
         </a>
       </div>
+
       <br />
       <section class="space-y-4 lg:text-xl">
         <h2 class="text-2xl font-semibold border-b border-gray-700 pb-1">Work</h2>
