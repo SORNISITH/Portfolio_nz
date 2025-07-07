@@ -87,12 +87,12 @@ const toolColors = {
 </script>
 <template>
   <!-- Grid container -->
-  <div>
+  <div class="bg-gray-200">
     <div>
       <h1 class="text-center z-10 text-emerald-600 text-2xl py-2">Web Development Services</h1>
     </div>
     <div
-      class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-6 bg-gray-100 items-stretch"
+      class="grid bg-gray-200 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 px-6 items-stretch"
     >
       <!-- Card -->
       <div

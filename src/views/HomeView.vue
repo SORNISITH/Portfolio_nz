@@ -6,6 +6,7 @@ import ServiceCardWeb from '@/components/ServiceCardWeb.vue'
 import { ref } from 'vue'
 import { useI18n } from 'vue-i18n'
 import ServiceCardArcgisPro from '@/components/ServiceCardArcgisPro.vue'
+import Stepper from '@/components/Stepper.vue'
 const { t } = useI18n()
 </script>
 <style scoped>
@@ -35,10 +36,14 @@ const { t } = useI18n()
           </h1>
         </span>
       </div>
-      <div class="w-1/2 flex justify-start items-center">
+      <div
+        class="w-1/2 flex scale-70 md:scale-80 xl:scale-95 lg:scale-100 justify-start items-center"
+      >
         <SquareAnimation />
       </div>
     </div>
+
+    <Stepper />
     <ServiceCardWeb />
     <ServiceCardArcgisPro />
     <br />

@@ -52,7 +52,11 @@ const changeLanguage = (language) => {
               />
             </router-link>
             <li
-              @click="navBarSlide = false"
+              @click="
+                () => {
+                  navBarSlide = false
+                }
+              "
               class="flex justify-center items-center"
               v-for="item in menu"
               :key="item"
@@ -107,7 +111,22 @@ const changeLanguage = (language) => {
         <!-- YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY ---- nav -->
         <nav aria-label="Global" class="hidden md:flex h-full justify-center gap-6 items-center">
           <ul class="flex items-center gap-6 text-sm h-full">
-            <li class="flex justify-center items-center h-full" v-for="item in menu" :key="item">
+            <li
+              @click="
+                () => {
+                  toast('Event has been created', {
+                    description: 'Sunday, December 03, 2023 at 9:00 AM',
+                    action: {
+                      label: 'Undo',
+                      onClick: () => console.log('Undo'),
+                    },
+                  })
+                }
+              "
+              class="flex justify-center items-center h-full"
+              v-for="item in menu"
+              :key="item"
+            >
               <router-link
                 class="relative after:content-[''] after:absolute after:left-0 after:-bottom-[10px] after:h-[2px] after:w-0 after:bg-blue-500 after:transition-all after:duration-300 hover:after:w-full active-link"
                 :to="item == 'Home' ? '/' : item.toLowerCase().replace(/\s+/g, '_')"
@@ -119,7 +138,11 @@ const changeLanguage = (language) => {
           <span class="flex h-6 items-center text-sm"> <Separator orientation="vertical" /></span>
           <div class="flex items-center gap-2 hover:scale-120 cursor-pointer">
             <span
-              @click="changeLanguage('khm')"
+              @click="
+                () => {
+                  changeLanguage('khm')
+                }
+              "
               :class="{ hidden: lang == 'khm' }"
               class="aspect-square w-5"
               ><p class="sr-only">English Language</p>
