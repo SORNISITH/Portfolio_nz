@@ -12,23 +12,80 @@ const changeLanguage = (language) => {
   lang.value = language
 }
 </script>
-
 <template>
   <header
-    class="bg-gray-100 h-16 flex justify-evenly top-0 backdrop-blur-lg sticky z-10 w-full shadow-sm"
+    class="bg-gray-100 h-16 flex justify-evenly z-1000 top-0 backdrop-blur-lg sticky z-10 w-full shadow-sm"
   >
+    <div
+      v-if="navBarSlide"
+      :class="navBarSlide ? 'opacity-100' : 'opacity-0'"
+      class="select-none transition-opacity duration-1000 absolute top-0 flex flex-wrap left-0 w-screen h-screen z-50"
+    >
+      <nav
+        aria-label="Global"
+        class="p-5 bg-gray-200 w-70 absolute z-100 shadow-xl border-2 left-0 h-screen justify-center gap-6 items-center"
+      >
+        <ul class="flex flex-col items-center gap-6 text-sm">
+          <router-link class="text-teal-600 h-full flex" to="/">
+            <img
+              class="w-12 aspect-square hover:rotate-90 transition-rotate duration-300"
+              src="@/assets/Artboard 1.svg"
+              alt="Logo"
+            />
+          </router-link>
+          <li
+            @click="navBarSlide = false"
+            class="flex justify-center items-center"
+            v-for="item in menu"
+            :key="item"
+          >
+            <router-link
+              class="relative after:content-[''] after:absolute after:left-0 after:-bottom-[10px] after:h-[2px] after:w-0 after:bg-blue-500 after:transition-all after:duration-300 hover:after:w-full active-link"
+              :to="item == 'Home' ? '/' : item.toLowerCase().replace(/\s+/g, '_')"
+            >
+              {{ t(item.toLowerCase().replace(/\s+/g, '_')) }}
+            </router-link>
+          </li>
+        </ul>
+        <span class="flex h-6 items-center text-sm"> <Separator orientation="vertical" /></span>
+        <div
+          class="flex items-center w-full gap-2 flex justify-center items-center hover:scale-120 cursor-pointer"
+        >
+          <span
+            @click="changeLanguage('khm')"
+            :class="{ hidden: lang == 'khm' }"
+            class="aspect-square w-5"
+            ><p class="sr-only">English Language</p>
+            <img src="/en.png" alt="english"
+          /></span>
+          <span
+            @click="changeLanguage('en')"
+            :class="{ hidden: lang == 'en' }"
+            class="aspect-square w-5"
+            ><p class="sr-only">Cambodian Language</p>
+            <img src="/kh.png" alt="english"
+          /></span>
+        </div>
+      </nav>
+      <div
+        @click="navBarSlide = !navBarSlide"
+        class="w-screen absolute z-10 bg-black opacity-70 h-full"
+      ></div>
+    </div>
+
     <div
       class="mx-auto flex w-[100%] lg:w-[60%] h-full justify-center items-center gap-8 px-4 sm:px-6 lg:px-8"
     >
       <router-link class="text-teal-600 h-full flex" to="/">
-        <span class="sr-only">Home</span>
         <img
           class="w-12 aspect-square hover:rotate-90 transition-rotate duration-300"
           src="@/assets/Artboard 1.svg"
           alt="Logo"
         />
       </router-link>
-      <div class="flex justify-end items-center gap-6 w-full">
+      <div class="flex justify-end relative items-center gap-6 w-full">
+        <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX ---- nav -->
+        <!-- YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY ---- nav -->
         <nav aria-label="Global" class="hidden md:flex h-full justify-center gap-6 items-center">
           <ul class="flex items-center gap-6 text-sm h-full">
             <li class="flex justify-center items-center h-full" v-for="item in menu" :key="item">
@@ -65,6 +122,7 @@ const changeLanguage = (language) => {
           /></span>
           <button
             @click="navBarSlide = !navBarSlide"
+            @mouseenter="navBarSlide = !navBarSlide"
             class="block rounded-sm bg-gray-100 p-2.5 text-gray-600 transition hover:text-gray-600/75 md:hidden"
           >
             <span class="sr-only">Toggle menu</span>
