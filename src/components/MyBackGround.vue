@@ -76,8 +76,8 @@
             Khmerak University.
           </li>
           <li><strong>2013–2018</strong> Graphic Designer at True Time Company</li>
-          <li><strong>2018–2019</strong> Editor/QC at Pathmazing</li>
-          <li><strong>2019–2020</strong> Team Leader at The Color Club</li>
+          <li><strong>2018–2019</strong> Embedded GIS Developer – ArcGIS Pro</li>
+          <li><strong>2019–Present</strong> GIS Technician – Database and Map as Maintainer</li>
           <li><strong>2020–Present</strong> Freelance Full Stack Web Developer</li>
         </ul>
       </section>
@@ -86,9 +86,7 @@
       <section class="space-y-4 lg:text-xl">
         <h2 class="text-2xl font-semibold border-b border-gray-700 pb-1">I ♥</h2>
         <br />
-        <p class="pl-10 text-gray-300">
-          Art, Music, Photography, GIS, Drawing, Machine Learning, Coding, UI/UX Design
-        </p>
+        <p class="pl-10 text-gray-300">Art, Music, GIS, Drawing, Coding, Design</p>
       </section>
       <br />
 
