@@ -235,14 +235,14 @@ const getAllFileFolderRepo = async (data) => {
                 Public
               </span>
             </div>
-            <!-- ✅ Clone URL with Copy Button -->
+            <!--Clone URL with Copy Button -->
             <div class="flex w-full items-center justify-between bg-gray-200 rounded-md px-3 py-2">
               <code @click="copyUrl(repo.html_url)" class="text-sm text-gray-800 break-all">
                 {{ repo.html_url }}
               </code>
               <button
                 @click="copyUrl(repo.html_url)"
-                class="ml-3 px-3 py-1 bg-blue-600 text-white text-sm rounded hover:bg-blue-700 active:scale-95 transition"
+                class="cursor-copy ml-3 px-3 py-1 bg-blue-600 text-white text-sm rounded hover:bg-blue-700 active:scale-95 transition"
               >
                 Copy
               </button>
@@ -251,14 +251,23 @@ const getAllFileFolderRepo = async (data) => {
             <div class="flex m-2 flex-wrap gap-3 text-sm text-gray-500 mb-4">
               <div>
                 🌿 Default Branch:
-                <span class="font-medium text-gray-700">master</span>
+                <span class="font-medium text-gray-700">{{ repo.default_branch }}</span>
               </div>
-              <div>📁 Forked: <span class="font-medium text-gray-700">Yes</span></div>
-              <div>⭐ Stars: <span class="font-medium text-gray-700">0</span></div>
-              <div>🍴 Forks: <span class="font-medium text-gray-700">0</span></div>
+              <div>
+                📁 Forked:
+                <span class="font-medium text-gray-700">{{ repo.forks ? 'Yes' : 'No' }}</span>
+              </div>
+              <div>
+                ⭐ Stars: <span class="font-medium text-gray-700">{{ repo.star }}</span>
+              </div>
+              <div>
+                🍴 Forks: <span class="font-medium text-gray-700">{{ repo.forks_count }}</span>
+              </div>
               <div>
                 🕒 Updated:
-                <span class="font-medium text-gray-700">2024-07-20</span>
+                <span class="font-medium text-gray-700">{{
+                  new Date(repo.updated_at).toLocaleString()
+                }}</span>
               </div>
             </div>
           </div>
