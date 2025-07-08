@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { Check, Circle, Dot } from 'lucide-vue-next'
-
 import { Button } from '@/components/ui/button'
 import {
   Stepper,
@@ -25,33 +24,15 @@ onMounted(() => {
 onBeforeUnmount(() => {
   clearInterval(intervalId)
 })
-const steps = [
-  {
-    step: 1,
-    title: 'Project Brief',
-    description: 'Discuss goals and give a quote',
-  },
-  {
-    step: 2,
-    title: 'Initial Payment',
-    description: 'Pay deposit to start the job',
-  },
-  {
-    step: 3,
-    title: 'Build Process',
-    description: 'Develop and update the client',
-  },
-  {
-    step: 4,
-    title: 'Client Review',
-    description: 'Check final work and give feedback',
-  },
-  {
-    step: 5,
-    title: 'Final Handoff',
-    description: 'Pay balance and get all files',
-  },
-]
+
+defineProps({
+  steps: Array,
+  // {
+  //   step: 1,
+  //   title: 'Project Brief',
+  //   description: 'Discuss goals and give a quote',
+  // },
+})
 </script>
 
 <template>

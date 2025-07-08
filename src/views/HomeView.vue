@@ -8,6 +8,34 @@ import { useI18n } from 'vue-i18n'
 import ServiceCardArcgisPro from '@/components/ServiceCardArcgisPro.vue'
 import Stepper from '@/components/Stepper.vue'
 const { t } = useI18n()
+
+const steps = [
+  {
+    step: 1,
+    title: 'Project Brief',
+    description: 'Discuss goals and give a quote',
+  },
+  {
+    step: 2,
+    title: 'Initial Payment',
+    description: 'Pay deposit to start the job',
+  },
+  {
+    step: 3,
+    title: 'Build Process',
+    description: 'Develop and update the client',
+  },
+  {
+    step: 4,
+    title: 'Client Review',
+    description: 'Check final work and give feedback',
+  },
+  {
+    step: 5,
+    title: 'Final Handoff',
+    description: 'Pay balance and get all files',
+  },
+]
 </script>
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
@@ -43,7 +71,7 @@ const { t } = useI18n()
       </div>
     </div>
 
-    <Stepper />
+    <Stepper :steps="steps" />
     <ServiceCardWeb />
     <ServiceCardArcgisPro />
     <br />
