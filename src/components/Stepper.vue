@@ -28,28 +28,28 @@ onBeforeUnmount(() => {
 const steps = [
   {
     step: 1,
-    title: 'Requirements Gathering',
-    description: 'Discuss project requirements and provide a quote',
+    title: 'Project Brief',
+    description: 'Discuss goals and give a quote',
   },
   {
     step: 2,
-    title: 'Deposit Payment',
-    description: 'Pay a deposit to begin the project ',
+    title: 'Initial Payment',
+    description: 'Pay deposit to start the job',
   },
   {
     step: 3,
-    title: 'Development Phase',
-    description: 'Work on the project while keeping client updated',
+    title: 'Build Process',
+    description: 'Develop and update the client',
   },
   {
     step: 4,
-    title: 'Final Review',
-    description: 'Client reviews the completed project deliverables',
+    title: 'Client Review',
+    description: 'Check final work and give feedback',
   },
   {
     step: 5,
-    title: 'Payment & Delivery',
-    description: 'Pay remaining balance and receive full project files',
+    title: 'Final Handoff',
+    description: 'Pay balance and get all files',
   },
 ]
 </script>
@@ -57,7 +57,7 @@ const steps = [
 <template>
   <Stepper
     :modelValue="current"
-    class="flex justify-center items-center w-full scale-90 md:scale-95 xl:scale-99 lg:scale-100 p-10 gap-2"
+    class="flex justify-center w-full scale-90 md:scale-95 xl:scale-99 lg:scale-100 p-10 gap-2"
   >
     <StepperItem
       v-for="step in steps"
