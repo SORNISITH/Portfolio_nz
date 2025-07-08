@@ -26,6 +26,12 @@ const router = createRouter({
           component: () => import('../views/GithubView.vue'),
         },
         {
+          path: '/my_library',
+          name: 'my_library',
+          component: () => import('../views/MyLib.vue'),
+        },
+
+        {
           path: '/contact',
           name: 'contact',
           component: () => import('../views/ContactUsView.vue'),

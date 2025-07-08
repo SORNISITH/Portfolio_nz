@@ -11,110 +11,105 @@ const services = [
       'Vue I18n',
       'Tailwind CSS',
       'Motion V (Animations)',
-      'Highlight.js',
       'Axios',
       'Vite',
     ],
+    href: '',
   },
 
   {
     title: 'My Portfolio 2',
     image: '/images/portfolio2.png',
-    tools: [
-      'React 19',
-      'React Router v7',
-      'MUI (Material UI)',
-      '@emotion/styled',
-      'Tailwind CSS',
-      'Axios',
-      'PDF.js (pdfjs-dist)',
-      'React Window',
-    ],
+    tools: ['React 19', 'React Router v7', 'MUI (Material UI)', 'Tailwind CSS', 'React Window'],
+    href: 'https://nisith.com/',
   },
 
   {
     title: 'Landing Page Template',
     image: '/images/landing.png',
-    tools: ['HTML5', 'Tailwind CSS', 'GSAP'],
+    tools: ['HTML5', 'Tailwind CSS', 'Vue 3', 'Motion One'],
+  },
+
+  {
+    title: 'Github API Test',
+    image: '/images/githubapi.png',
+    tools: [
+      'Vue 3',
+      'Tailwind CSS',
+      'Axios',
+      '@highlightjs/vue-plugin',
+      'GitHub REST API v3',
+      'Vite',
+    ],
   },
 
   {
     title: 'Chat App',
     image: '/images/chat.png',
-    tools: ['JavaScript', 'HTML5', 'CSS'],
+    tools: ['JavaScript', 'HTML5', 'CSS3', 'Socket.IO', 'Vite'],
   },
   {
     title: 'Code HTML Highlight',
     image: '/images/code.jpg',
-    tools: ['Next.js', 'Sanity.io', 'Tailwind CSS'],
+    tools: ['Vue 3', 'Highlight.js', 'Tailwind CSS', '@highlightjs/vue-plugin'],
   },
   {
     title: 'Weather Dashboard',
     image: '/images/weather.jpg',
-    tools: ['Vue.js', 'OpenWeather API', 'Bootstrap'],
+    tools: ['React.js', 'Tailwind CSS', 'OpenWeather API', 'Axios'],
   },
   {
     title: 'Admin Panel',
     image: '/images/dashboard1.png',
-    tools: ['React', 'Redux Toolkit', 'Firebase'],
+    tools: ['Vue 3', 'Vue Router', 'Tailwind CSS', 'Pinia', 'Chart.js'],
   },
   {
     title: 'Real-time Dashboard',
     image: '/images/dashboard.png',
-    tools: ['Vue.js', 'Chart.js', 'Node.js'],
+    tools: ['Vue 3', 'Tailwind CSS', 'Vue Router', 'WebSocket', 'Pinia'],
   },
 ]
 
 const toolColors = {
-  // Frontend
-  HTML: 'bg-orange-100 text-orange-800',
-  CSS: 'bg-blue-100 text-blue-800',
+  // ⚙️ Core Web
+  HTML5: 'bg-orange-100 text-orange-700',
+  CSS3: 'bg-blue-100 text-blue-700',
   JavaScript: 'bg-yellow-100 text-yellow-800',
-  TypeScript: 'bg-blue-200 text-blue-900',
-  'Vue.js': 'bg-green-100 text-green-800',
-  React: 'bg-cyan-100 text-cyan-800',
-  'Tailwind CSS': 'bg-teal-100 text-teal-800',
 
-  // Backend
-  'Node.js': 'bg-lime-100 text-lime-800',
-  'Express.js': 'bg-gray-200 text-gray-800',
-  MongoDB: 'bg-green-200 text-green-900',
-  PostgreSQL: 'bg-indigo-100 text-indigo-800',
-  JWT: 'bg-purple-100 text-purple-800',
-  'REST API': 'bg-blue-100 text-blue-800',
+  // ⚛️ React Ecosystem
+  'React 19': 'bg-cyan-100 text-cyan-700',
+  'React.js': 'bg-cyan-100 text-cyan-700',
+  'React Router v7': 'bg-rose-100 text-rose-700',
+  'React Window': 'bg-indigo-100 text-indigo-700',
 
-  // DevOps
-  Linux: 'bg-gray-100 text-gray-800',
-  Nginx: 'bg-emerald-100 text-emerald-800',
-  Docker: 'bg-sky-100 text-sky-800',
-  Netlify: 'bg-teal-100 text-teal-800',
-  Vercel: 'bg-neutral-200 text-black',
-  'GitHub Actions': 'bg-slate-200 text-slate-900',
+  // 🧩 Vue Ecosystem
+  'Vue 3': 'bg-emerald-100 text-emerald-700',
+  'Vue Router': 'bg-green-100 text-green-700',
+  'Vue I18n': 'bg-teal-100 text-teal-700',
+  Pinia: 'bg-lime-100 text-lime-700',
 
-  // UI/UX
-  Figma: 'bg-pink-100 text-pink-800',
-  'Adobe XD': 'bg-red-100 text-red-700',
-  Sketch: 'bg-yellow-200 text-yellow-800',
-  Framer: 'bg-blue-100 text-blue-800',
+  // 💨 Styling
+  'Tailwind CSS': 'bg-sky-100 text-sky-700',
+  'MUI (Material UI)': 'bg-blue-100 text-blue-800',
+  '@emotion/styled': 'bg-pink-100 text-pink-700',
 
-  // Testing
-  Jest: 'bg-red-200 text-red-800',
-  Mocha: 'bg-brown-100 text-brown-800',
-  Cypress: 'bg-green-100 text-green-900',
-  Playwright: 'bg-indigo-100 text-indigo-900',
-  Vitest: 'bg-lime-200 text-lime-900',
-  HTML5: 'bg-[hsl(231,90%,90%)] text-[hsl(231,60%,30%)]',
-  GSAP: 'bg-[hsl(292,90%,90%)] text-[hsl(292,60%,30%)]',
-  Express: 'bg-[hsl(810,90%,90%)] text-[hsl(810,60%,30%)]',
-  'Socket.IO': 'bg-[hsl(614,90%,90%)] text-[hsl(614,60%,30%)]',
-  'Next.js': 'bg-[hsl(588,90%,90%)] text-[hsl(588,60%,30%)]',
-  'Sanity.io': 'bg-[hsl(911,90%,90%)] text-[hsl(911,60%,30%)]',
-  'OpenWeather API': 'bg-[hsl(1522,90%,90%)] text-[hsl(1522,60%,30%)]',
-  Bootstrap: 'bg-[hsl(944,90%,90%)] text-[hsl(944,60%,30%)]',
-  'Redux Toolkit': 'bg-[hsl(1306,90%,90%)] text-[hsl(1306,60%,30%)]',
-  Firebase: 'bg-[hsl(741,90%,90%)] text-[hsl(741,60%,30%)]',
-  EJS: 'bg-[hsl(226,90%,90%)] text-[hsl(226,60%,30%)]',
-  'Chart.js': 'bg-[hsl(870,90%,90%)] text-[hsl(870,60%,30%)]',
+  // 📦 Tooling
+  Vite: 'bg-purple-100 text-purple-700',
+  Axios: 'bg-gray-100 text-gray-800',
+  'Motion V (Animations)': 'bg-purple-100 text-purple-700',
+  'Motion One': 'bg-violet-100 text-violet-700',
+
+  // 🔌 Networking & Real-time
+  'Socket.IO': 'bg-gray-200 text-gray-800',
+  WebSocket: 'bg-stone-100 text-stone-700',
+
+  // 📊 Visualization & Utility
+  ChartJS: 'bg-red-100 text-red-700',
+  'Chart.js': 'bg-red-100 text-red-700',
+  'OpenWeather API': 'bg-blue-50 text-blue-700',
+  'Highlight.js': 'bg-yellow-50 text-yellow-700',
+  '@highlightjs/vue-plugin': 'bg-yellow-50 text-yellow-700',
+  'PDF.js (pdfjs-dist)': 'bg-slate-100 text-slate-700',
 }
 </script>
 
@@ -135,9 +130,13 @@ const toolColors = {
         class="flex flex-col hover:border-2 hover:border-green-500 hover:z-100 transition-all duration-300 border-b-[5px] border-green-500 bg-white text-black shadow-sm rounded-md overflow-hidden"
       >
         <!-- Title -->
-        <h1 class="text-2xl text-center p-2 font-bold mb-3">
+        <a
+          :href="service.href"
+          target="_blank"
+          class="text-2xl hover:underline underline-offset-2 cursor-pointer text-center p-2 font-bold mb-3"
+        >
           {{ service.title }}
-        </h1>
+        </a>
 
         <!-- Image Section -->
         <div class="bg-gray-200 scale-95 shadow-sm h-120 flex items-center justify-center">

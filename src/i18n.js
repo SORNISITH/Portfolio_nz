@@ -6,6 +6,7 @@ const LANG = (type) => ({
   about_me: type === 'en' ? 'About Me' : 'អំពី​ពួក​ខ្ញុំ',
   services: type === 'en' ? 'Services' : 'សេវាកម្ម',
   projects: type === 'en' ? 'Projects' : 'គម្រោង',
+  my_library: type === 'en' ? 'My Library' : 'សៀវភៅ',
   github: type === 'en' ? 'Github' : 'ហ្គីតហប់ - Github',
   contact: type === 'en' ? 'Contact' : 'ទំនាក់ទំនង',
   blog: type === 'en' ? 'Blog' : 'ប្លុក',
