@@ -10,5 +10,4 @@ import HyperFooter from '@/components/HyperFooter.vue'
     <RouterView />
   </div>
   <HyperFooter />
-  <div class="relative w-screen h-screen"></div>
 </template>

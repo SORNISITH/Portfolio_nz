@@ -3,6 +3,7 @@ import { ref } from 'vue'
 import { Button } from '@/components/ui/button'
 import { useI18n } from 'vue-i18n'
 import { Separator } from '@/components/ui/separator'
+
 const menu = ref(['Home', 'About Me', 'Projects', 'Github', 'Contact'])
 const navBarSlide = ref(false)
 const lang = ref('en')
@@ -112,17 +113,7 @@ const changeLanguage = (language) => {
         <nav aria-label="Global" class="hidden md:flex h-full justify-center gap-6 items-center">
           <ul class="flex items-center gap-6 text-sm h-full">
             <li
-              @click="
-                () => {
-                  toast('Event has been created', {
-                    description: 'Sunday, December 03, 2023 at 9:00 AM',
-                    action: {
-                      label: 'Undo',
-                      onClick: () => console.log('Undo'),
-                    },
-                  })
-                }
-              "
+              @click="() => {}"
               class="flex justify-center items-center h-full"
               v-for="item in menu"
               :key="item"
