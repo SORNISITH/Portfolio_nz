@@ -4,9 +4,34 @@ import { ref } from 'vue'
 const services = [
   {
     title: 'My Portfolio Website',
-    image: '/images/portfolio.png',
-    tools: ['Vue.js', 'Tailwind CSS', 'Node.js'],
+    image: '/images/portfolio1.png',
+    tools: [
+      'Vue 3',
+      'Vue Router',
+      'Vue I18n',
+      'Tailwind CSS',
+      'Motion V (Animations)',
+      'Highlight.js',
+      'Axios',
+      'Vite',
+    ],
   },
+
+  {
+    title: 'My Portfolio 2',
+    image: '/images/portfolio2.png',
+    tools: [
+      'React 19',
+      'React Router v7',
+      'MUI (Material UI)',
+      '@emotion/styled',
+      'Tailwind CSS',
+      'Axios',
+      'PDF.js (pdfjs-dist)',
+      'React Window',
+    ],
+  },
+
   {
     title: 'Landing Page Template',
     image: '/images/landing.png',
@@ -14,39 +39,24 @@ const services = [
   },
 
   {
-    title: 'E-Commerce Site',
-    image: '/images/shop.png',
-    tools: ['React', 'Express', 'MongoDB'],
-  },
-  {
-    title: 'Task Manager API',
-    image: '/images/api.png',
-    tools: ['Node.js', 'Express', 'PostgreSQL'],
-  },
-  {
     title: 'Chat App',
     image: '/images/chat.png',
-    tools: ['Socket.IO', 'React', 'Node.js'],
+    tools: ['JavaScript', 'HTML5', 'CSS'],
   },
   {
-    title: 'Blog Platform',
-    image: '/images/blog.png',
+    title: 'Code HTML Highlight',
+    image: '/images/code.jpg',
     tools: ['Next.js', 'Sanity.io', 'Tailwind CSS'],
   },
   {
     title: 'Weather Dashboard',
-    image: '/images/weather.png',
+    image: '/images/weather.jpg',
     tools: ['Vue.js', 'OpenWeather API', 'Bootstrap'],
   },
   {
     title: 'Admin Panel',
-    image: '/images/admin.png',
+    image: '/images/dashboard1.png',
     tools: ['React', 'Redux Toolkit', 'Firebase'],
-  },
-  {
-    title: 'URL Shortener',
-    image: '/images/url-shortener.png',
-    tools: ['Express', 'MongoDB', 'EJS'],
   },
   {
     title: 'Real-time Dashboard',
@@ -130,16 +140,16 @@ const toolColors = {
         </h1>
 
         <!-- Image Section -->
-        <div class="bg-gray-200 h-120 flex items-center justify-center">
+        <div class="bg-gray-200 scale-95 shadow-sm h-120 flex items-center justify-center">
           <img
             :src="service.image"
             alt="Screenshot of project"
-            class="object-cover w-full h-full border-2 border-gray-200 max-h-full max-w-full"
+            class="object-cover hover:grayscale-0 grayscale w-full h-full border-2 border-gray-200 max-h-full max-w-full"
           />
         </div>
 
         <!-- Stack Section -->
-        <div class="bg-gray-100 p-2 text-sm text-center">
+        <div class="bg-gray-300 p-2 text-sm text-center">
           <ul class="flex flex-wrap gap-2 p-2 justify-center">
             <li
               v-for="tool in service.tools"
