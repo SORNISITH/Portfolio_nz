@@ -6,61 +6,61 @@ const books = ref([
     title: "Empire of AI: Dreams and Nightmares in Sam Altman's OpenAI",
     shortTitle: 'Empire of AI',
     href: 'https://www.amazon.com/Empire-AI-Dreams-Nightmares-Altmans/dp/0593657500',
-    img: 'asset/empireofai.jpg',
+    img: 'books/empireofai.jpg',
   },
   {
     title: 'The Coming Wave: AI, Power, and Our Future',
     shortTitle: 'The Coming Wave',
     href: 'https://www.amazon.com/Coming-Wave-Power-Our-Future/dp/0593593979',
-    img: 'asset/thecomingwave.jpg',
+    img: 'books/thecomingwave.jpg',
   },
   {
     title: 'AI Engineering: Building Applications with Foundation Models',
     shortTitle: 'AI Engineering',
     href: 'https://www.amazon.com/AI-Engineering-Building-Applications-Foundation/dp/1098166302',
-    img: 'asset/aiengineering.jpg',
+    img: 'books/aiengineering.jpg',
   },
   {
     title: 'Mastering AI Engineering: Building Powerful Applications with Foundation Models',
     shortTitle: 'Mastering AI Engineering',
     href: 'https://www.amazon.com/Mastering-AI-Engineering-Applications-Foundation/dp/B0F8HD5QD1',
-    img: 'asset/masteringaiengineering.jpg',
+    img: 'books/masteringaiengineering.jpg',
   },
   {
     title: 'Genesis: Artificial Intelligence, Hope, and the Human Spirit',
     shortTitle: 'Genesis',
     href: 'https://www.amazon.com/Genesis-Artificial-Intelligence-Human-Spirit/dp/0316581291/ref=sr_1_1?crid=3QPPVDRGZT9HQ&dib=eyJ2IjoiMSJ9.gLdkUtMqGDglmbh8jluWNAh2NIprRlxMPjbWt4zqp7-3m971mHjwK8LbUvLzbsjha_1h8twvWn5m5hN5YTmFqD20MRH3nJghNWcn40FJquk0Z1cqA7g7MTe8Icv6NOBFzmRNaJia4St59XNOvw-7J8kOhRqLpipRZDpUfm9oRjTmOOujWlE_uaORB4aX8aswb6KIApTcI3nh8Nr1e40ZtWTARHle0MTY4lj7f8FOxnk.K85S_1Bl3wAlIWh-T4TNUBaCRdbzS9r-np8dFRE8E_w&dib_tag=se&keywords=genesis&qid=1749644056&s=books&sprefix=ge%2Cstripbooks%2C389&sr=1-1',
-    img: 'asset/genesis.jpg',
+    img: 'books/genesis.jpg',
   },
   {
     title: 'The AI Snake Oil: What Artificial Intelligence Can Do, What It Can’t',
     shortTitle: 'The AI Snake Oil',
     href: 'https://www.amazon.com/Snake-Oil-Patrick-Flint-Novel-ebook/dp/B07ZJRFR61/ref=sr_1_1?crid=3Q4FVS6IIU2JP&dib=eyJ2IjoiMSJ9.q4GDMmVYb5NoRg4yZY3ICZ9e6_sSrCBujMd1FDzXAaxDNPsvArkzrQXQfh2dVMAmJ9uUR133-BrDVyJEVJFn4zGrklrnuD3RBkH-6tcdbGcn7_B5fi7uGKpVYmXEXB09h9YchOOh6v1ej0emWOvao-ItDQWpnt1HCZEg8X8hi2js8bwaBbNwEbFs-PIiFI3ktnegZyyRBk3Y1EnMPjsNeejv86PvAYdXnsdnuhfNB9I.croN_haoihsU7GrLjBUGwX7ugWeWtmC4cmuX8mymSFo&dib_tag=se&keywords=snake+oil&qid=1749644190&s=books&sprefix=aisnakeoil%2Cstripbooks%2C387&sr=1-1',
-    img: 'asset/aisnakeoil.jpg',
+    img: 'books/aisnakeoil.jpg',
   },
   {
     title: 'LLM Design Patterns: Practical Guide',
     shortTitle: 'LLM Design Patterns',
     href: 'https://www.amazon.com/LLM-Design-Patterns-Practical-Efficient/dp/1836207034/ref=sr_1_1?crid=11A4NM6V8CR27&dib=eyJ2IjoiMSJ9.h7F7e2DF1A1s_Us5WTEoEpQcRi2F4V7KzGPClqWzf2WqhJjshgHE9xgqZ6-uesaHlJeQ9S8BZSaVNl5iku-2U6KWWMiN_8aVk_UNVDJY7iSDEUfOkJQRSFvLMk9j5W17Ok_-Jfs9wCxh60KmXGUKIStPwMGoTXzKFQ34Q5u7-O-B8Zdc__Q2NcjE1pYQbEUEi6JT28kGThBtClXGa0ZM80X9siBRm6cJnsicJlbNxk4.5vys5J2CZn0uPo5kysuTtNKbOvqMcL6sK26V5evnBWw&dib_tag=se&keywords=llm+design+pattern&qid=1749644755&s=books&sprefix=llm+design+patte%2Cstripbooks%2C302&sr=1-1',
-    img: 'asset/llm.jpg',
+    img: 'books/llm.jpg',
   },
   {
     title: 'The AI Engineering Bible',
     shortTitle: 'AI Engineering Bible',
     href: 'https://www.amazon.com/Engineering-Bible-Up-Date-Production/dp/B0F672GWRZ/ref=sr_1_1?crid=197GZGKDI6H2Z&dib=eyJ2IjoiMSJ9.XEArbBEpcBN2Gs_e3_e3y6vQFLeMQst_sV_C1XI63PYcGBO2eAcJcNhvun1ep8ijryVWA9Z1xNHRWq6xVWtxW_hRdqSwuJz4wSKa61Fpqq694yvIpluNgZ1eqHE-Qe7YXXKS2Xm6aqG9FCrZAPZGOtbOpNLyRpitr48nlxOkNROJ1kpXlpHJFui6y5pkhSsJ77gvJBISetNYuB_X8M6HIFvbbSGSna-vGQGCEmxPX3A.WCfowoOZFNST61q0sZ44roYuUAVak1uobxwomh5cuHE&dib_tag=se&keywords=ai+engineer+bible&qid=1749644691&s=books&sprefix=ai+engineer+bib%2Cstripbooks%2C300&sr=1-1',
-    img: 'asset/aiengineerbible.jpg',
+    img: 'books/aiengineerbible.jpg',
   },
   {
     title: 'Some Future Day: How AI Is Going to Change Everything',
     shortTitle: 'Some Future Day',
     href: 'https://www.amazon.com/Some-Future-Day-Change-Everything/dp/1648210775',
-    img: 'asset/somefutureday.jpg',
+    img: 'books/somefutureday.jpg',
   },
   {
     title: "The AI Con: How to Fight Big Tech's Hype",
     shortTitle: 'The AI Con',
     href: 'https://www.amazon.com/AI-Fight-Techs-Create-Future/dp/0063418568',
-    img: 'asset/theaicon.jpg',
+    img: 'books/theaicon.jpg',
   },
 ])
 </script>
@@ -71,7 +71,7 @@ const books = ref([
     </div>
 
     <div class="w-full flex justify-center items-center">
-      <div class="gap-20 sm:gap-4 lg:gap-10 w-[90%] px-[5%] grid grid-cols-5">
+      <div class="gap-20 sm:gap-4 mt-5 lg:gap-10 w-[90%] px-[5%] grid grid-cols-5">
         <div
           v-for="(book, index) in books"
           :key="index"

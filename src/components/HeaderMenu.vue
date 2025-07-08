@@ -3,7 +3,7 @@ import { ref } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { Separator } from '@/components/ui/separator'
 
-const menu = ref(['Home', 'About Me', 'Projects', 'Github', 'my library', 'Contact'])
+const menu = ref(['Home', 'About Me', 'Projects', 'Github', 'Contact'])
 const navBarSlide = ref(false)
 const lang = ref('en')
 const { t, locale } = useI18n()
