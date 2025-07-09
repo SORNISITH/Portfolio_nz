@@ -41,7 +41,6 @@ const validationSchema = yup.object({
 
 // Handle Submit
 function onSubmit(values, { resetForm }) {
-  alert('Contact information submitted successfully!')
   layout.value = 2
   console.log(values)
   resetForm()
