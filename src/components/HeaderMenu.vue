@@ -57,7 +57,7 @@ const changeLanguage = (language) => {
                   navBarSlide = false
                 }
               "
-              class="flex justify-center items-center"
+              class="flex justify-center text-black items-center"
               v-for="item in menu"
               :key="item"
             >
@@ -154,7 +154,6 @@ const changeLanguage = (language) => {
           /></span>
           <button
             @click="navBarSlide = !navBarSlide"
-            @mouseenter="navBarSlide = !navBarSlide"
             class="block rounded-sm bg-gray-100 p-2.5 text-gray-600 transition hover:text-gray-600/75 md:hidden"
           >
             <span class="sr-only">Toggle menu</span>
