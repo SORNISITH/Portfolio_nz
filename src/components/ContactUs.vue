@@ -1,6 +1,7 @@
 <script setup>
 import { reactive, ref } from 'vue'
-
+import { Form, Field, ErrorMessage } from 'vee-validate'
+import * as yup from 'yup'
 const layout = ref(1)
 
 const budgetOptions = [
@@ -26,11 +27,45 @@ function resetForm() {
   form.message = ''
   layout.value = 1
 }
-function handleSubmit() {
-  console.log('Form submitted:', form)
-  layout.value = 2
-  // Example: send data to backend API
+async function handleSubmit() {
+  try {
+    await validationSchema.validate(
+      {
+        name: form.name,
+        email: form.email,
+        message: form.message,
+      },
+      { abortEarly: false },
+    )
+
+    // Success
+    alert('Contact information submitted successfully!')
+    layout.value = 2
+
+    resetForm()
+  } catch (err) {
+    if (err.inner) {
+      const errorMessages = err.inner.map((e) => `${e.path}: ${e.message}`).join('\n')
+      alert(`Validation Errors:\n${errorMessages}`)
+    } else {
+      alert('Unknown validation error')
+    }
+  } // Example: send data to backend API
 }
+
+const validationSchema = yup.object({
+  name: yup
+    .string()
+    .matches(/^[A-Za-z\s]+$/, 'Only alphabet and space is accepted')
+    .min(3, 'Name must be at least 3 characters')
+    .required('Name is required'),
+  email: yup.string().email('Invalid email').required('Email is required'),
+  message: yup
+    .string()
+    .min(10, 'Message must be from 10 to 100 characters')
+    .max(100, 'Message must be from 10 to 100 characters')
+    .required('Message is required'),
+})
 </script>
 
 <template>
