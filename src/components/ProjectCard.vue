@@ -143,7 +143,7 @@ const toolColors = {
           <img
             :src="service.image"
             alt="Screenshot of project"
-            class="object-cover hover:grayscale-0 grayscale w-full h-full border-2 border-gray-200 max-h-full max-w-full"
+            class="object-cover hover:scale-105 transition-scale duration-700 hover:grayscale-0 grayscale w-full h-full border-2 border-gray-200 max-h-full max-w-full"
           />
         </div>
 
