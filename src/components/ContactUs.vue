@@ -69,7 +69,7 @@ function onSubmit(values, { resetForm }) {
 
     <!-- Vee Form -->
     <Form
-      netlify
+      method="POST" data-netlify="true
       v-else
       :validation-schema="validationSchema"
       @submit="onSubmit"
