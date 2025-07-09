@@ -41,7 +41,7 @@ function onSubmit(values, { resetForm }) {
 }
 </script>
 <template>
-  <div class="flex flex-col p-2 items-center h-screen">
+  <div class="flex flex-col p-2 items-center">
     <p class="text-2xl p-2">{{ t('contact_title') }}</p>
 
     <!-- Success layout -->
