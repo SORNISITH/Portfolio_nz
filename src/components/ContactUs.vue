@@ -93,7 +93,7 @@ function onReSubmit(values) {
       name="contact-form"
       :validation-schema="validationSchema"
       @submit="onSubmit"
-      class="w-full gap-2 max-w-xl mx-auto flex flex-col space-y-4 p-4"
+      class="w-full gap-2 bg-white rounded-xl shadow-sm max-w-xl mx-auto flex flex-col space-y-4 p-4"
       v-slot="{ errors, values }"
     >
       <!-- Full Name -->
