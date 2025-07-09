@@ -21,10 +21,17 @@ const validationSchema = yup.object({
     .matches(/^[A-Za-z\s]+$/, 'Only alphabet and space is accepted')
     .min(3, 'Name must be at least 3 characters')
     .required('Name is required'),
+
   email: yup.string().email('Invalid email').required('Email is required'),
-  phone: yup.string(),
+
+  phone: yup
+    .string()
+    .matches(/^\+\d[\d\s-]*$/, 'Phone must start with + and contain only digits, spaces or dashes')
+    .required('Phone is required'),
   service: yup.string().required('Service is required'),
+
   budget: yup.string().required('Budget is required'),
+
   message: yup
     .string()
     .min(10, 'Message must be from 10 to 100 characters')
