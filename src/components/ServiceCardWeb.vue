@@ -117,5 +117,6 @@ const toolColors = {
         </ul>
       </div>
     </div>
+    <br />
   </div>
 </template>
