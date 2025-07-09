@@ -97,7 +97,7 @@ const getAllFileFolderRepo = async (data) => {
       >
     </div>
   </div>
-  <div v-else class="bg-gray-100 flex flex-col w-full">
+  <div v-else class="bg-gray-100 text-black flex flex-col w-full">
     <div class="">
       <a
         target="_blank"
