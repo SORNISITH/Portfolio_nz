@@ -1,12 +1,18 @@
 <script setup>
+import 'highlight.js/lib/common'
+import hljsVuePlugin from '@highlightjs/vue-plugin'
+import 'highlight.js/styles/stackoverflow-light.css'
+
 import { ref } from 'vue'
 import { Form, Field, ErrorMessage, useForm } from 'vee-validate'
 import * as yup from 'yup'
 import { useI18n } from 'vue-i18n'
-
+const { values } = useForm() //  live form values
 const { t } = useI18n()
-const layout = ref(1)
+let submittedValues = ref({})
 
+const layout = ref(1)
+const contactForm = ref(null)
 const budgetOptions = [
   { label: 'Less than $500', value: '< $500' },
   { label: '$500 - $1000', value: '$500 - $1000' },
@@ -42,8 +48,12 @@ const validationSchema = yup.object({
 // Handle Submit
 function onSubmit(values, { resetForm }) {
   layout.value = 2
+  submittedValues.value = values
   console.log(values)
-  resetForm()
+}
+function onReSubmit(values) {
+  layout.value = 1
+  contactForm.value?.resetForm()
 }
 </script>
 <template>
@@ -57,10 +67,16 @@ function onSubmit(values, { resetForm }) {
     >
       <code class="text-green-600 font-mono">Method: POST</code>
       <code class="text-green-600 underline underline-offset-2 text-sm font-mono">Sucessfull</code>
+      <hljsVuePlugin.component
+        autodetect
+        class="w-full h-full"
+        :code="JSON.stringify(submittedValues, null, 2)"
+      />
+
       <p class="text-sm italic text-gray-500">Form has been submitted</p>
       <button
         type="button"
-        @click="layout = 1"
+        @click="onReSubmit"
         class="w-[50%] py-2 px-4 bg-blue-600 text-white rounded hover:bg-blue-700 transition"
       >
         Submit Another
@@ -71,6 +87,7 @@ function onSubmit(values, { resetForm }) {
     <Form
       method="POST"
       netlify
+      ref="contactForm"
       v-else
       data-netlify="true"
       name="contact-form"
