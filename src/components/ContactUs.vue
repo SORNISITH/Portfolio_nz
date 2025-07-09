@@ -57,7 +57,7 @@ function onReSubmit(values) {
 }
 </script>
 <template>
-  <div class="flex flex-col p-2 items-center">
+  <div class="flex flex-col p-2 text-black items-center">
     <p class="text-2xl p-2">{{ t('contact_title') }}</p>
 
     <!-- Success layout -->
