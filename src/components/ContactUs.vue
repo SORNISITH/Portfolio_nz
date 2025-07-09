@@ -72,6 +72,8 @@ function onSubmit(values, { resetForm }) {
       method="POST"
       netlify
       v-else
+      data-netlify="true"
+      name="contact-form"
       :validation-schema="validationSchema"
       @submit="onSubmit"
       class="w-full gap-2 max-w-xl mx-auto flex flex-col space-y-4 p-4"
