@@ -47,13 +47,15 @@ const toolColors = {
 </script>
 
 <template>
-  <div>
+  <div class="flex flex-col items-center">
     <div>
       <h1 class="text-center text-orange-600 text-2xl py-2 font-semibold">
         GIS & ArcGIS Pro Services
       </h1>
     </div>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-6 items-stretch">
+    <div
+      class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 lg:w-[70%] md:w-[85%] gap-6 px-6 items-stretch"
+    >
       <div
         v-for="(service, index) in service"
         :key="`arcgis-${index}`"

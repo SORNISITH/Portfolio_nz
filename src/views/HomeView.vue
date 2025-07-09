@@ -72,6 +72,7 @@ const steps = [
     </div>
     <Stepper :steps="steps" />
     <ServiceCardWeb />
+    <br />
     <ServiceCardArcgisPro />
     <br />
   </main>
