@@ -58,7 +58,7 @@ onMounted(async () => {
 const getRawBlob = async (url, type, name) => {
   isBlobLoaded.value = true
   const result = await axios.get(url, {
-    headers: { Authorization: `token ${token}` },
+    headers: { Authorization: `Bearer ${token}` },
   })
   rawBlob.value = result.data
   isBlobLoaded.value = false
@@ -76,7 +76,7 @@ const getAllFileFolderRepo = async (data) => {
   const result = await axios.get(
     `https://api.github.com/repos/SORNISITH/${data.name}/git/trees/${data.default_branch}?recursive=1`,
     {
-      headers: { Authorization: `token ${token}` },
+      headers: { Authorization: `Bearer ${token}` },
     },
   )
   console.log('File Object:', result.data)
