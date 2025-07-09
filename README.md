@@ -86,7 +86,7 @@ nz_portfolio/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/nz_portfolio.git
+git clone https://github.com/SORNISITH/nz_portfolio.git
 cd nz_portfolio
 ```
 
