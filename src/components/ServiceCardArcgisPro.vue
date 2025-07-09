@@ -54,12 +54,12 @@ const toolColors = {
       </h1>
     </div>
     <div
-      class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 lg:w-[70%] md:w-[85%] gap-6 px-6 items-stretch"
+      class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 lg:w-[70%] md:w-[100%] gap-6 px-6 items-stretch"
     >
       <div
         v-for="(service, index) in service"
         :key="`arcgis-${index}`"
-        class="flex flex-col border-l-[5px] hover:border-1 active:border-orange-500 hover:border-orange-500 hover:z-100 transition-all duration-900 border-orange-500 bg-white p-6 text-black shadow-sm rounded-md"
+        class="flex flex-col border-l-[5px] w-full hover:border-1 active:border-orange-500 hover:border-orange-500 hover:z-100 transition-all duration-900 border-orange-500 bg-white p-6 text-black shadow-sm rounded-md"
       >
         <h1 class="text-2xl font-bold mb-3">{{ service.title }}</h1>
         <p class="mb-4 text-base text-gray-700">{{ service.description }}</p>

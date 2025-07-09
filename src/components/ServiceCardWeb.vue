@@ -92,13 +92,13 @@ const toolColors = {
       <h1 class="text-center z-10 text-emerald-600 text-2xl py-2">Web Development Services</h1>
     </div>
     <div
-      class="grid bg-gray-200 grid-cols-1 md:grid-cols-2 lg:grid-cols-2 md:w-[85%] lg:w-[70%] place-items-center gap-4 px-6 items-stretch"
+      class="grid bg-gray-200 grid-cols-1 md:grid-cols-2 lg:grid-cols-2 md:w-full lg:w-[70%] place-items-center gap-4 px-6 items-stretch"
     >
       <!-- Card -->
       <div
         v-for="(service, index) in services"
         :key="index"
-        class="flex hover:border-1 active:border-green-500 hover:border-green-500 hover:z-100 transition-all duration-300 flex-col border-l-[5px] border-green-500 bg-white p-6 text-black shadow-sm rounded-md"
+        class="flex hover:border-1 w-full active:border-green-500 hover:border-green-500 hover:z-100 transition-all duration-300 flex-col border-l-[5px] border-green-500 bg-white p-6 text-black shadow-sm rounded-md"
       >
         <h1 class="text-2xl font-bold mb-3">{{ service.title }}</h1>
         <p class="mb-4 text-base text-gray-700">{{ service.description }}</p>
