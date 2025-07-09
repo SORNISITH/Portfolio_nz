@@ -70,7 +70,6 @@ const steps = [
         <SquareAnimation />
       </div>
     </div>
-
     <Stepper :steps="steps" />
     <ServiceCardWeb />
     <ServiceCardArcgisPro />

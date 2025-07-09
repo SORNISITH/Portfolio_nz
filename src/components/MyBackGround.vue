@@ -1,3 +1,4 @@
+<script setup></script>
 <template>
   <div class="bg-gray-900 text-white min-h-screen px-6 py-10 font-sans">
     <div class="p-6 mx-auto space-y-16">
@@ -55,10 +56,11 @@
         <h2 class="text-2xl font-semibold border-b border-gray-700 pb-1">Work</h2>
         <br />
         <p class="pl-10 text-gray-300 leading-relaxed">
-          I am a motivated full-stack developer and designer based in Phnom Penh. He specializes in
-          web development, GIS, and graphic design. He has experience working for several companies
-          and freelancing remotely since 2020. He loves solving problems with code and creating
-          beautiful, user-friendly digital experiences.
+          I am a passionate full-stack developer and designer based in Phnom Penh, specializing in
+          web development, GIS solutions, and graphic design. With experience working for multiple
+          companies and freelancing remotely since 2020, I bring a strong track record of delivering
+          high-quality, user-centric digital solutions. I thrive on solving complex problems through
+          code and take pride in crafting elegant, intuitive user experiences.
         </p>
       </section>
       <br />
@@ -108,13 +110,25 @@
         </ul>
       </section>
       <br />
+      <section class="space-y-4 lg:text-xl">
+        <h2 class="text-2xl font-semibold border-b border-gray-700 pb-1">Technical Expertise</h2>
+        <br />
+        <ul class="pl-10 text-gray-300 list-disc list-inside space-y-2">
+          <li><strong>Frontend:</strong> Responsive, accessible, user-focused UI development.</li>
+          <li><strong>Backend:</strong> Scalable APIs, secure authentication, data management.</li>
+          <li><strong>DevOps:</strong> Automation, containerization, cloud deployment.</li>
+          <li><strong>Architecture:</strong> Agile SDLC, modular design, clean code.</li>
+          <li><strong>Design:</strong> Branding, visual communication, marketing assets.</li>
+          <li><strong>GIS:</strong> Spatial analysis, map visualization, web integration.</li>
+          <li>
+            <strong>Other:</strong> Real-time features, state management, testing, optimization.
+          </li>
+        </ul>
+      </section>
+      <br />
     </div>
   </div>
 </template>
-
-<script setup>
-// Static content — no logic needed for now
-</script>
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
