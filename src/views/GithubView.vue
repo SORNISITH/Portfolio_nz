@@ -40,12 +40,12 @@ function copyUrl(url) {
 onMounted(async () => {
   const getDataProfile = await axios.get('https://api.github.com/users/SORNISITH', {
     headers: {
-      Authorization: `token ${token}`,
+      Authorization: `Bearer ${token}`,
     },
   })
   const getDataRepo = await axios.get('https://api.github.com/users/SORNISITH/repos', {
     headers: {
-      Authorization: `token ${token}`,
+      Authorization: `Bearer ${token}`,
     },
   })
   getAllFileFolderRepo(getDataRepo.data[0])

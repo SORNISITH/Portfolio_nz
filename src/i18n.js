@@ -23,6 +23,27 @@ const LANG = (type) => ({
   readMore: type === 'en' ? 'Read More' : 'អានបន្ថែម',
   viewDetails: type === 'en' ? 'View Details' : 'មើលព័ត៌មានលម្អិត',
 
+  // Contact Form (prefixed with contact_)
+  contact_title: type === 'en' ? 'We would love to hear from you!' : 'យើងចង់បានសំនើចេញពីអ្នក!',
+  contact_fullName: type === 'en' ? 'Full Name' : 'ឈ្មោះពេញ',
+  contact_namePlaceholder: type === 'en' ? 'Your name' : 'ឈ្មោះរបស់អ្នក',
+  contact_email: type === 'en' ? 'Email' : 'អ៊ីមែល',
+  contact_emailPlaceholder: type === 'en' ? 'you@example.com' : 'you@example.com',
+  contact_phone: type === 'en' ? 'Phone' : 'លេខទូរស័ព្ទ',
+  contact_phonePlaceholder: type === 'en' ? '+855 12345678' : '+855 12345678',
+  contact_service: type === 'en' ? 'Service Needed' : 'សេវាកម្មដែលចង់បាន',
+  contact_selectService: type === 'en' ? 'Select a service' : 'ជ្រើសសេវាកម្ម',
+  contact_budget: type === 'en' ? 'Estimated Budget' : 'ថវិកាប្រមាន',
+  contact_budgetOptions: {
+    under500: type === 'en' ? 'Less than $500' : 'ក្រោម $500',
+    under1000: type === 'en' ? '$500 - $1000' : '$500 - $1000',
+    under3000: type === 'en' ? '$1000 - $3000' : '$1000 - $3000',
+    over3000: type === 'en' ? 'More than $3000' : 'លើស $3000',
+  },
+  contact_description: type === 'en' ? 'Project Description' : 'ពិពណ៌នាពីគម្រោង',
+  contact_descriptionPlaceholder:
+    type === 'en' ? 'Tell me about your project...' : 'ប្រាប់អំពីគម្រោងរបស់អ្នក...',
+  contact_sendMessage: type === 'en' ? 'Send Message' : 'ផ្ញើសារ',
   // Form Fields
   email: type === 'en' ? 'Email Address' : 'អាសយដ្ឋានអ៊ីមែល',
   password: type === 'en' ? 'Password' : 'ពាក្យសម្ងាត់',

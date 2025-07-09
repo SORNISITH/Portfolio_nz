@@ -2,6 +2,8 @@
 import { reactive, ref } from 'vue'
 import { Form, Field, ErrorMessage } from 'vee-validate'
 import * as yup from 'yup'
+import { useI18n } from 'vue-i18n'
+const { t } = useI18n()
 const layout = ref(1)
 
 const budgetOptions = [
@@ -70,7 +72,7 @@ const validationSchema = yup.object({
 
 <template>
   <div class="flex flex-col p-2 items-center h-screen">
-    <p class="text-2xl p-2">We would love to hear from you!</p>
+    <p class="text-2xl p-2">{{ t('contact_title') }}</p>
     <div
       v-if="layout == 2"
       class="w-full h-full gap-2 max-w-xl mx-auto flex flex-col items-center space-y-4 p-4"
@@ -95,7 +97,7 @@ const validationSchema = yup.object({
       <!-- Full Name -->
       <div class="flex flex-col gap-1">
         <label for="name" class="text-sm font-medium text-gray-900 dark:text-gray-300">
-          Full Name
+          {{ t('contact_fullName') }}
         </label>
         <input
           id="name"
@@ -103,7 +105,7 @@ const validationSchema = yup.object({
           type="text"
           name="name"
           class="w-full p-2 border rounded"
-          placeholder="Your name"
+          :placeholder="t('contact_namePlaceholder')"
           required
         />
       </div>
@@ -111,7 +113,7 @@ const validationSchema = yup.object({
       <!-- Email -->
       <div class="flex flex-col gap-1">
         <label for="email" class="text-sm font-medium text-gray-900 dark:text-gray-300">
-          Email
+          {{ t('contact_email') }}
         </label>
         <input
           id="email"
@@ -127,7 +129,7 @@ const validationSchema = yup.object({
       <!-- Phone -->
       <div class="flex flex-col gap-1">
         <label for="phone" class="text-sm font-medium text-gray-900 dark:text-gray-300">
-          Phone
+          {{ t('contact_phone') }}
         </label>
         <input
           id="phone"
@@ -143,7 +145,7 @@ const validationSchema = yup.object({
       <!-- Service Selection -->
       <div class="flex flex-col gap-1">
         <label for="service" class="text-sm font-medium text-gray-900 dark:text-gray-300">
-          Service Needed
+          {{ t('contact_service') }}
         </label>
         <select
           id="service"
@@ -152,7 +154,7 @@ const validationSchema = yup.object({
           class="w-full p-2 border rounded"
           required
         >
-          <option value="" disabled selected>Select a service</option>
+          <option value="" disabled selected>{{ t('contact_selectService') }}</option>
           <option value="frontend">Frontend Development</option>
           <option value="backend">Backend Development</option>
           <option value="gis">GIS Solutions</option>
@@ -164,7 +166,7 @@ const validationSchema = yup.object({
       <!-- Budget Range -->
       <div class="flex flex-col gap-2">
         <label class="text-sm font-medium text-gray-900 dark:text-gray-300 mb-1">
-          Estimated Budget
+          {{ t('contact_budget') }}
         </label>
 
         <div class="grid grid-cols-2 gap-2">
@@ -188,7 +190,7 @@ const validationSchema = yup.object({
       <!-- Message -->
       <div class="flex flex-col gap-1">
         <label for="message" class="text-sm font-medium text-gray-900 dark:text-gray-300">
-          Project Description
+          {{ t('contact_description') }}
         </label>
         <textarea
           id="message"
@@ -196,7 +198,7 @@ const validationSchema = yup.object({
           name="message"
           rows="5"
           class="w-full p-2 border rounded"
-          placeholder="Tell me about your project..."
+          :placeholder="t('contact_descriptionPlaceholder')"
           required
         ></textarea>
       </div>
@@ -206,7 +208,7 @@ const validationSchema = yup.object({
         type="submit"
         class="w-full py-2 px-4 bg-blue-600 text-white rounded hover:bg-blue-700 transition"
       >
-        Send Message
+        {{ t('contact_sendMessage') }}
       </button>
     </form>
   </div>
