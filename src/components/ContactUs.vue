@@ -70,6 +70,7 @@ function onSubmit(values, { resetForm }) {
 
     <!-- Vee Form -->
     <Form
+      netlify
       v-else
       :validation-schema="validationSchema"
       @submit="onSubmit"
