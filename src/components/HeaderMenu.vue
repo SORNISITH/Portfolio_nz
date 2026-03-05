@@ -29,7 +29,7 @@ const changeLanguage = (language) => {
 </style>
 <template>
   <header
-    class="bg-gray-100 h-16 flex justify-evenly z-1000 top-0 backdrop-blur-lg sticky z-10 w-full shadow-sm"
+    class="bg-gray-100 h-16 text-black flex justify-evenly z-1000 top-0 backdrop-blur-lg sticky z-10 w-full shadow-sm"
   >
     <transition name="fade" mode="out-in">
       <div
